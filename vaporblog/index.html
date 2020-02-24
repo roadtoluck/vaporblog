@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Vaporblog starting page</title>
+	<style>
+
+		@font-face{
+			font-family:paralines;
+			src: url(css/fonts/Paralines-Regular.otf);
+		}
+
+		@font-face{
+			font-family:eastmarket;
+			src: url(css/fonts/EastMarket.otf);
+		}
+
+		@font-face{
+			font-family:vcr;
+			src: url(css/fonts/VCR.otf);
+		}
+
+		body{
+			margin:0;
+			background-image: url(src/photos/cartridge.gif);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		.link-image{
+			width: 150px;
+			height:150px;
+			border:2px solid #00ff1a;
+		}
+
+
+		.grid-container{
+			display: grid;
+			justify-content: center;
+			grid-template-columns: auto auto;
+			grid-column-gap: 300px;
+			grid-row-gap: 20px;
+
+		}
+
+		.grid-item{
+			text-align: center;
+		}
+
+		#welcome-sign{
+		text-align: center;
+		font-family: vcr;
+		color: #b266ff;
+		font-size: 72px;	
+		font-weight: normal;
+	}
+
+		.headings{
+		text-align: center;
+		font-family: eastmarket;
+		color:#009999;
+		font-size: 40px;	
+		font-weight: bold;
+		}
+
+		.text{
+			color: #00ff1a;
+		}
+
+
+	</style>
+</head>
+<body>	
+	<div>	
+		<nav class="nav">
+			<a  href="index.html">| H o m e |</a>
+			<a  href="about.html">| A b o u t |</a>
+			<a  href="gallery.html">|  G a l l e r y |</a>
+			<a  href="contact.html">| C o n t a c t |</a>
+		</nav>
+	</div>
+		<h1 id="welcome-sign">[ W E L C O M E ]</h1>
+		<div class="grid-container">
+
+			<div class="grid-item">
+				<h2 class="text">Ｗｈａｔ　ｉｓ　ｖａｐｏｒｗａｖｅ　？</h2>
+				<a href="">
+					<img class="link-image" src="src/photos/vapor.jpg" alt="photo" >
+				</a>
+			</div>
+
+			<div class="grid-item">
+				<h2 class="text">ｖａｐｏｒｗａｖｅ　ｓｕｂｇｅｎｒｅｓ</h2>
+				<a href="">
+				<img class="link-image" src="src/photos/play.jpg" alt="photo" >
+				</a>
+			</div>
+
+			<div class="grid-item">
+				<h2 class="text">Ｅｓｓｅｎｔｉａｌ　ｇｕｉｄｅ</h2>
+				<a href="">
+					<img class="link-image" src="src/photos/topaz.jpg" alt="photo" >
+				</a>
+			</div>
+
+			<div class="grid-item">
+				<h2 class="text">Ｍｙ Ｆａｖｏｒｉｔｅ　ａｌｂｕｍｓ	</h2>
+				<a href="">
+					<img class="link-image" src="src/photos/pepsi.jpg" alt="photo" >
+				</a>
+			</div>
+
+
+		</div>
+
+
+
+</body>
+</html>

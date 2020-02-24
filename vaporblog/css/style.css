@@ -1,0 +1,23 @@
+
+.nav{
+	display:flex;
+	justify-content: center;
+	font-family: vcr;
+	color: #190033;
+	font-size: 18px;
+	font-weight: bold;
+
+}
+
+@font-face{
+	font-family:vcr;
+	src: url(css/fonts/VCR.otf);
+}
+
+.headings{
+	text-align: center;
+	font-family: vcr;
+	color:#33ffff;
+	font-size: 64px;
+	font-weight: normal;
+}
