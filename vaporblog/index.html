@@ -25,12 +25,13 @@
 			margin:0;
 			background-image: url(src/photos/cartridge.gif);
 			background-size: cover;
+			align-self: center;
 			background-repeat: no-repeat;
 			height: 100vh;
 		}
 		
 		.link-image{
-			width: 40%;
+			width: 200px;
 			height: 200px;
 			border:2px solid #00ff1a;
 		}
@@ -43,7 +44,7 @@
 			grid-template-columns:  auto auto;
 			grid-column: span 2;
 			grid-row: span 2;
-			grid-column-gap: 20px;
+			grid-column-gap: 20%;
 			grid-row-gap: 20px;
 
 		}
@@ -53,25 +54,44 @@
 		}
 
 		#welcome-sign{
-		text-align: center;
-		font-family: vcr;
-		color: #b266ff;
-		font-size: 72px;	
-		font-weight: normal;
-	}
+			text-align: center;
+			font-family: vcr;
+			color: #b266ff;
+			font-size: 72px;	
+			font-weight: normal;
+		}
 
 		.headings{
-		text-align: center;
-		font-family: eastmarket;
-		color:#009999;
-		font-size: 40px;	
-		font-weight: bold;
+			text-align: center;
+			font-family: eastmarket;
+			color:#009999;
+			font-size: 40px;	
+			font-weight: bold;
 		}
 
 		.text{
 			color: #00ff1a;
-			font-size: 3vh;
+			font-size: 18px;
 		}
+
+		@media screen and (max-width: 860px){
+			.grid-container{
+				grid-template-columns: 1fr;
+			}
+
+			body{
+				background-repeat: repeat;
+			}
+
+			.nav{
+				font-size: 14px;
+			}
+
+			#welcome-sign{
+				font-size: 42px;
+			}
+		}
+
 
 
 	</style>
