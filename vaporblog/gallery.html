@@ -13,6 +13,25 @@
 			font-family:vcr;
 			src: url(css/fonts/VCR.otf);
 		}
+
+		.gallery-photo{
+			width: 200px;
+			height: 200px;
+		}
+
+		#gallery{
+			display: grid;
+			width: 100%;
+			justify-content: center;
+			grid-template-columns:  auto auto auto auto;
+			grid-column: span 2;
+			grid-row: span 2;
+			grid-column-gap: 5%;
+			grid-row-gap: 20px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
 	</style>
 </head>
 <body>
@@ -22,5 +41,22 @@
 		<a  href="gallery.html">|  G a l l e r y |</a>
 		<a  href="contact.html">| C o n t a c t |</a>
 	</nav>
+
+	<div id="gallery">
+		<img class="gallery-photo" src="src/photos/cover.png" alt="birth of a new day album cover">
+		<img class="gallery-photo" src="src/photos/floralshoppe.jpg" alt="floral shoppe album cover">
+		<img class="gallery-photo" src="src/photos/pepsi.jpg" alt="can of fresh pepsi">
+		<img class="gallery-photo" src="src/photos/play.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/prsd.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/statue.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/tf2.png" alt="">
+		<img class="gallery-photo" src="src/photos/topaz.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/vapor.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/virtualocean.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/yikes.jpg" alt="">
+		<img class="gallery-photo" src="src/photos/waves.jpg" alt="">
+	</div>
+
+
 </body>
 </html>

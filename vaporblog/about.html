@@ -6,12 +6,51 @@
 	<title>About Section</title>
 	<style>
 		body{
-			background-color:#cc6699;
+			margin:0;
+			background-image: url(src/photos/gif/cartridge.gif);
+			background-size: cover;
+			align-self: center;
+			background-repeat: no-repeat;
+			height: 100vh;
 		}
+
+		#heading-photo{
+			width: 200px;
+			height: 200px;
+			border:2px solid #33ffff;;
+			display: block; 
+			margin-left: auto;
+ 			margin-right: auto;
+		}	
 
 		@font-face{
 			font-family:vcr;
 			src: url(css/fonts/VCR.otf);
+		}
+
+		@font-face{
+			font-family:EastMarket;
+			src: url(css/fonts/EastMarket.otf);
+		}
+
+		.word{
+			font-family: vcr;
+			text-decoration: none;
+		}
+
+		#aboutme-block{
+			background-color: #e90c9f;
+			border-color: #33ffff;
+			border-width: 2px;
+			border-style: solid;
+			margin-left: 300px;
+			margin-right: 300px;
+			margin-top: 25px;
+			font-size: 20px;
+			font-family: 'Times New Roman';
+			color:#020068;
+			text-align: center;
+			
 		}
 	</style>
 </head>
@@ -23,7 +62,22 @@
 		<a  href="contact.html">| C o n t a c t |</a>
 	</nav>
 
-	<h1 class="headings">A b o u t  M e</h1>
+	<div id="start-block">
+		<h1 class="headings">A b o u t  M e</h1>
+
+		<img src="src/photos/statue.jpg" alt="statue" id="heading-photo">
+	</div>
+
+
+	<div id="aboutme-block"><p>I first encountered <em class="word">vaporwave</em> in <strong class="word">2018</strong>,
+	 when I started studying in technical school.</p>
+	<p>I found <a class="word" href="https://www.youtube.com/watch?v=ea_UOPzuyZU&t=2319s" target="_blank">【this mix】<a>.
+	It caught my attention because of the <em>ｂｉｚｚａｒｅ</em> sounding that I found really funny but also <em>ｅｎｊｏｙａｂｌｅ</em>. 
+	From that moment I started looking into this genre and found more interesting music for me.</p>
+	<p>And now that I have a task to create <strong class="word">blog</strong>, I decided to make this 
+	<strong class="word">blog</strong> about this music genre. Basically I will tell you about it, it's history, subgenres and etc. . . 
+	I also will share some of the artist works I like. So that is it about this <strong class="word">blog</strong>.</p>
+	</div>
 
 </body>
 </html>
