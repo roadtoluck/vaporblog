@@ -3,6 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/lightbox/css/lightbox.css">
+
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+
+	<script src="libs/lightbox/js/lightbox.js"></script>
 	<title>Gallery</title>
 	<style>
 		body{
@@ -19,7 +27,7 @@
 			height: 200px;
 		}
 
-		#gallery{
+		.gallery{
 			display: grid;
 			width: 100%;
 			justify-content: center;
@@ -32,6 +40,38 @@
 			margin-bottom: 50px;
 		}
 
+		.video-gallery{
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			width: 100%;
+			flex-flow: wrap;
+		}
+
+		.video{
+			margin-bottom: 50px;
+			margin-top: 50px;
+		}
+
+
+		
+		@media screen and (max-width: 960px){
+			.gallery{
+				grid-template-columns: auto auto auto;
+			}
+		}
+
+		@media screen and (max-width: 700px){
+			.gallery{
+				grid-template-columns: auto auto;
+			}
+
+			.nav{
+				font-size: 12px;
+			}
+		}	
+
 	</style>
 </head>
 <body>
@@ -42,21 +82,83 @@
 		<a  href="contact.html">| C o n t a c t |</a>
 	</nav>
 
-	<div id="gallery">
-		<img class="gallery-photo" src="src/photos/cover.png" alt="birth of a new day album cover">
-		<img class="gallery-photo" src="src/photos/floralshoppe.jpg" alt="floral shoppe album cover">
-		<img class="gallery-photo" src="src/photos/pepsi.jpg" alt="can of fresh pepsi">
-		<img class="gallery-photo" src="src/photos/play.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/prsd.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/statue.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/tf2.png" alt="">
-		<img class="gallery-photo" src="src/photos/topaz.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/vapor.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/virtualocean.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/yikes.jpg" alt="">
-		<img class="gallery-photo" src="src/photos/waves.jpg" alt="">
+	<h1 class="headings">Gallery</h1>
+
+	<h3 class="smaller-headings">Albums</h3>
+
+	<div class="gallery">
+		<a href="src/photos/cover.png" data-lightbox="vaporalbum" data-title="2814 - Birth of a new day album cover"> 
+			<img class="gallery-photo" src="src/photos/cover.png"> </a>
+
+		<a href="src/photos/floral_shoppe.jpg" data-lightbox="vaporalbum" data-title="MACINTOSH PLUS - Floral Shoppe album cover"> 
+			<img class="gallery-photo" src="src/photos/floral_shoppe.jpg"> </a>
+
+		<a href="src/photos/mannequin_challenge.jpg" data-lightbox="vaporalbum" data-title="Saint pepsi - Mannequin Challenge released in 2019"> 
+			<img class="gallery-photo" src="src/photos/mannequin_challenge.jpg"> </a>
+
+		<a href="src/photos/new_generation.jpg" data-lightbox="vaporalbum" data-title="Saint pepsi - New generation album cover"> 
+			<img class="gallery-photo" src="src/photos/new_generation.jpg"> </a>
+
+		<a href="src/photos/sailorwave.jpg" data-lightbox="vaporalbum" data-title="Macross 82-99 - sailorwave album cover"> 
+			<img class="gallery-photo" src="src/photos/sailorwave.jpg"> </a>
+
+		<a href="src/photos/tuxedo_princess.jpg" data-lightbox="vaporalbum" data-title="Topaz gang - Tuxedo princess album cover"> 
+			<img class="gallery-photo" src="src/photos/tuxedo_princess.jpg"> </a>
+
+		<a href="src/photos/palm_haze.jpg" data-lightbox="vaporalbum" data-title="Miami vice - Palm haze album cover"> 
+			<img class="gallery-photo" src="src/photos/palm_haze.jpg"> </a>
+
+		<a href="src/photos/palm_tree_fm.jpg" data-lightbox="vaporalbum" data-title="Topaz gang - Palm tree FM album cover"> 
+			<img class="gallery-photo" src="src/photos/palm_tree_fm.jpg"> </a>
+
+
 	</div>
 
+	<h3 class="smaller-headings">Visual Aesthetics</h3>
+
+	<div class="gallery">
+
+		<a href="src/photos/prsd.jpg" data-lightbox="vapor" data-title="vaporwave visual aesthetics"> 
+			<img class="gallery-photo" src="src/photos/prsd.jpg"> </a>
+
+		<a href="src/photos/statue.jpg" data-lightbox="vapor" data-title="vaporwave visual aesthetics"> 
+			<img class="gallery-photo" src="src/photos/statue.jpg"> </a>
+
+		<a href="src/photos/vapor.jpg" data-lightbox="vapor" data-title="vaporwave visual aesthetics"> 
+			<img class="gallery-photo" src="src/photos/vapor.jpg"> </a>
+
+		<a href="src/photos/virtualocean.jpg" data-lightbox="vapor" data-title="vaporwave visual aesthetics"> 
+			<img class="gallery-photo" src="src/photos/virtualocean.jpg"> </a>
+
+		<a href="src/photos/yikes.jpg" data-lightbox="vapor" data-title="vaporwave visual aesthetics"> 
+			<img class="gallery-photo" src="src/photos/yikes.jpg"> </a>
+
+		<a href="src/photos/waves.jpg" data-lightbox="vapor" data-title="Vaporwave Aesthetic poster"> 
+			<img class="gallery-photo" src="src/photos/waves.jpg"> </a>
+
+		<a href="src/photos/pepsi.jpg" data-lightbox="vapor" data-title="vaporwave visual aesthetics"> 
+			<img class="gallery-photo" src="src/photos/pepsi.jpg"> </a>
+
+		<a href="src/photos/play.jpg" data-lightbox="vapor" data-title="Vaporwave Aesthetic poster"> 
+			<img class="gallery-photo" src="src/photos/play.jpg"> </a>
+
+	</div>
+
+	<h3 class="smaller-headings">Videos</h3>
+
+	<div class="video-gallery">
+
+		<iframe class="video" width="700" height="415" src="https://www.youtube.com/embed/MIuErXAR5Nc" frameborder="0"
+		 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 
+
+		<iframe class="video" width="700" height="415" src="https://www.youtube.com/embed/S3PZPWEyVg0" frameborder="0"
+		  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<iframe class="video" width="700" height="415" src="https://www.youtube.com/embed/W-dK2naYOiE" frameborder="0"
+		  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	</div>
 
 </body>
 </html>

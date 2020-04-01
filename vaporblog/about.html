@@ -21,7 +21,12 @@
 			display: block; 
 			margin-left: auto;
  			margin-right: auto;
-		}	
+		}
+
+		.block-text{
+			margin-left: 25px;
+			margin-right: 25px;
+		}
 
 		@font-face{
 			font-family:vcr;
@@ -39,12 +44,13 @@
 		}
 
 		#aboutme-block{
+			
 			background-color: #e90c9f;
 			border-color: #33ffff;
 			border-width: 2px;
 			border-style: solid;
-			margin-left: 300px;
-			margin-right: 300px;
+			margin-left: 150px;
+			margin-right: 150px;
 			margin-top: 25px;
 			font-size: 20px;
 			font-family: 'Times New Roman';
@@ -52,6 +58,26 @@
 			text-align: center;
 			
 		}
+
+		@media screen and (max-width: 860px){
+			body{
+				background-repeat: repeat;
+			}
+
+			.nav{
+				font-size: 14px;
+			}
+
+			.headings{
+				font-size: 42px;
+			}
+
+			.block-text{
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+		}
+
 	</style>
 </head>
 <body>
@@ -69,12 +95,12 @@
 	</div>
 
 
-	<div id="aboutme-block"><p>I first encountered <em class="word">vaporwave</em> in <strong class="word">2018</strong>,
+	<div id="aboutme-block"><p class="block-text">I first encountered <em class="word">vaporwave</em> in <strong class="word">2018</strong>,
 	 when I started studying in technical school.</p>
-	<p>I found <a class="word" href="https://www.youtube.com/watch?v=ea_UOPzuyZU&t=2319s" target="_blank">【this mix】<a>.
+	<p class="block-text">I found <a class="word" href="https://www.youtube.com/watch?v=ea_UOPzuyZU&t=2319s" target="_blank">【this mix】<a>.
 	It caught my attention because of the <em>ｂｉｚｚａｒｅ</em> sounding that I found really funny but also <em>ｅｎｊｏｙａｂｌｅ</em>. 
 	From that moment I started looking into this genre and found more interesting music for me.</p>
-	<p>And now that I have a task to create <strong class="word">blog</strong>, I decided to make this 
+	<p class="block-text">And now that I have a task to create <strong class="word">blog</strong>, I decided to make this 
 	<strong class="word">blog</strong> about this music genre. Basically I will tell you about it, it's history, subgenres and etc. . . 
 	I also will share some of the artist works I like. So that is it about this <strong class="word">blog</strong>.</p>
 	</div>

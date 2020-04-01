@@ -3,16 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
 	<title>Contact Segment</title>
+
+	<script>
+
+		$(document).ready(function() {
+			$("#submit").click(function(){
+				$("#name").trigger("reset");
+				$("#info").trigger("reset");
+			});
+		});
+
+	</script>
+
 	<style>
 		body{
 			background-color:#cc6699;
+
+		}
+
+		.smaller-headings{
+			font-size: 24px;
 		}
 
 		@font-face{
 			font-family:vcr;
 			src: url(css/fonts/VCR.otf);
 		}
+
+		#center-block{
+			display: flex;
+			align-items: center;
+  			justify-content: center;
+						
+		}
+
+        @media screen and (max-width: 640px){
+			body{
+				background-color: rebeccapurple;
+			}
+
+			.nav{
+				font-size: 14px;
+			}
+
+			iframe{
+				width:200;
+			}
+		}
+
 	</style>
 </head>
 <body>
@@ -22,5 +65,35 @@
 		<a  href="gallery.html">|  G a l l e r y |</a>
 		<a  href="contact.html">| C o n t a c t |</a>
 	</nav>
+	
+	<h1 class="headings">Contacts</h1>
+
+	<h3 class="smaller-headings">Tell us about yourself</h3>
+
+	<div id="center-block">
+
+		<form id="inputform" action="">
+
+			<label for="name">Your name</label><br>
+			<input type="text" value="" id="name"><br><br>
+
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label><br><br>	
+
+			<label for="info">About you</label><br>
+			<textarea id="info" cols="30" rows="10"></textarea><br>	 
+
+			<button id="submit">Submit</button>
+
+		</form>
+
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4351.526911165142!2d24.
+			103742966131584!3d56.95285386390031!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slv!4v158575509
+			4052!5m2!1sen!2slv" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+
 </body>
 </html>

@@ -21,3 +21,11 @@
 	font-size: 64px;
 	font-weight: normal;
 }
+
+.smaller-headings{
+	text-align: center;
+	font-family: vcr;
+	color:#38ff52;
+	font-size: 54px;
+	font-weight: normal;
+}
